@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8">
+    <title>Simply Planner</title>
+    <link th:href="@{style.css}" href="../static/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+
+        $("document").ready(function($) {
+               $(".center").delay(100).show("fade",1000);
+ });
+    </script>
+</head>
+<body>
+<div class="center">
+<center>
+<p>W TRAKCIE</p>
+</center>
+<ul th:each="todo : ${tasksinprogress}">
+    <li th:text="${todo}" th:value="${todo}"></li><br>
+    <a th:href="'/delete/' + ${todo.id}"><font color="red">USUŃ</font></a>
+    <a th:href="'/changedone/' + ${todo.id}"><font color="#00FF00">WYKONANE</font></a><br><br>
+</ul>
+<center>
+<a class="button" href="/">POWRÓT</a>
+</center>
+</div>
+</body>
+</html>

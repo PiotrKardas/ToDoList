@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+background-color: #ffffe6;
+}
+
+h1 {
+font-family: 'Pacifico', cursive;
+font-size: 100px;
+color: #26dd70;
+}
+
+textarea{
+height: 150px;
+width:500px;
+resize: none;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+}
+
+.center{
+margin:auto;
+width: 500px;
+display:none;
+}
+
+.main{
+display: none;
+}
+
+p{
+font-size: 25px;
+}
+
+.buttons a{
+border: solid;
+margin: 10px;
+padding: 10px;
+border: 2px solid #8253EB;
+text-decoration: none;
+}
+
+.button{
+border: solid;
+margin: 10px;
+padding: 10px;
+border: 2px solid #8253EB;
+text-decoration: none;
+}
+
+.button2{
+border: solid;
+margin: 10px;
+padding: 10px;
+border: 2px solid #8253EB;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+background-color: #ffffe6;
+color: #8253EB;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+font-weight: bold;
+}
+
+
